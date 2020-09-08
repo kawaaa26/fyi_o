@@ -1,0 +1,2 @@
+class Snap < ApplicationRecord
+end
