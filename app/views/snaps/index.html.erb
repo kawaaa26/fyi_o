@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Snaps</h1>
+
+<table>
+
+  <tbody>
+    <% @snaps.each do |snap| %>
+      <tr>
+        <td><%= link_to image_tag(snap.images.url, width: '200', height: '300'), snap %></td>
+      </tr>
+      <tr>
+        <td>title: <%= snap.title %></td>
+      </tr>
+      <tr>
+        <td>detail: <%= snap.detail %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Edit', edit_snap_path(snap) %> | <%= link_to 'Destroy', snap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Snap', new_snap_path %>
