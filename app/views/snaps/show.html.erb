@@ -12,7 +12,8 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @snap.image %>
+  <%# <%= image_tag @snap.image.url if @snap.image %> %>
+  <%= image_tag @snap.images.url %>
 </p>
 
 <%= link_to 'Edit', edit_snap_path(@snap) %> |
