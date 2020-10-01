@@ -43,8 +43,13 @@ class ImagesUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-  def filename
-    "snap.jpg" if original_filename
-  end
+  # def filename
+  #   if original_filename.present?
+  #     time = Time.now
+  #     name = "snap#{time.strftime('%Y%m%d')}" + '.jpg'
+  #     name.downcase
+  #   end
+    # "snap_id#{snap.id}.jpg" if original_filename
+  # end
 
 end

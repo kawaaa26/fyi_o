@@ -10,6 +10,7 @@ capybara-*.html
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*
 /public/system
+/public/uploads
 /coverage/
 /spec/tmp
 *.orig
@@ -40,6 +41,7 @@ config/master.key
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
+.python-version
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc

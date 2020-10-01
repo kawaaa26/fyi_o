@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_09_21_102517) do
   create_table "snaps", force: :cascade do |t|
     t.string "title", default: "", null: false
     t.text "detail", default: "", null: false
-    t.string "images"
+    t.string "images", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

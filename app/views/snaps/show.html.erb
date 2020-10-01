@@ -12,7 +12,10 @@
 
 <p>
   <strong>Images:</strong>
-    <%= image_tag @snap.images.url %>
+
+  <% @snap.images.each do |image| %>
+    <%= image_tag image.url %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_snap_path(@snap) %> |
